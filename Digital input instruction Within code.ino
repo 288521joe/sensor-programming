@@ -1,4 +1,6 @@
-//Digital input is given inside the code, digital input will control the digital output, 
+//Condition
+//Digital input is given inside the code, 
+//Digital input will control the digital output, 
 //GPIO 2 is commited to inbuid LED
 
 #define LED1_PIN1  2 // GPIO2
