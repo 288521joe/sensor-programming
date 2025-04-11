@@ -1,12 +1,25 @@
 
 # sensor-prog using ESP32
-![image](https://github.com/user-attachments/assets/e87d629b-4d70-4e05-9c9d-814804b40e2b)
-**The ESP32 peripherals include:**
-•	18 Analog-to-Digital Converter (12bit - ADC) channels
-•	3 SPI interfaces
-•	3 UART interfaces
-•	2 I2C interfaces
-•	16 PWM output channels
-•	2 Digital-to-Analog Converters (8 bit - DAC)
-•	2 I2S interfaces
-•	10 Capacitive sensing GPIOs
+
+**Setting up ESP32 in Arduino IDE**
+
+•	File → Preferences https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+•	Open Tools → Board → Boards Manager. (install)
+
+•	Download CP2102 Driver
+
+•	If failed to connect" error → Hold the BOOT button while uploading.
+
+# Digital input/Output
+**Digital input instruction Within code**
+
+#define LED1_PIN1  2 // GPIO2
+void setup() {
+    pinMode(LED1_PIN1, OUTPUT);
+}
+void loop() {
+    digitalWrite(LED1_PIN1,HIGH);
+    delay(1000);
+    digitalWrite(LED1_PIN1,LOW);
+      delay(1000);
